@@ -1,62 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Contact | Nathan Miller</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="yourName">
-                <h2 id="whiteHeading">Nate Miller</h2>
-            </div>
-            <nav class="links">
-                <a href="index.html" class="indexLink text linkText">About</a>
-                <a href="portfolio.html" class="portfolioLink text linkText">Portfolio</a>
-                <a href="contact.html" class="contactLink text linkText">Contact</a>
-            </nav>
-        </header>
-        <div class="clearBoth"></div>
-        <div class="main">
-            <section class="mainLarge">
-                <h2>Contact</h2>
-                <div class="line"></div>
-                <form class="text" action="mailto:heyyonate@gmail.com" method="post">
-                    <br> Name:
-                    <br>
-                    <input type="text" name="name" class="nameInput text" placeholder="John Smith">
-                    <br> Email:
-                    <br>
-                    <input type="text" name="email" class="emailInput text" placeholder="example@gmail.com">
-                    <br>
-                    <br> Message:
-                    <br>
-                    <textarea name="message" class="messageInput text"></textarea>
-                    <br>
-                    <br>
-                    <button type="Submit" class="submitButton text" value="Email This Form">Submit</button>
-                    <br>
-                    <br>
-                </form>
-            </section>
-            <aside class="connect">
-                <h3>Connect with Me</h3>
-                <div class="line2"></div>
-                <br>
-                <a href="https://github.com/nathanmiller9"><img src="assets/images/github_image2.png" alt="GitHub Logo" class="logo"></a>
-                <a href="https://www.linkedin.com/in/nathan-miller-04411710/"><img src="assets/images/linkedin.png" alt="LinkedIn Logo" class="logo"></a>
-                <a href="http://stackoverflow.com/users/edit/7348071"><img src="assets/images/stackoverflow_image.png" alt="StackOverflow Logo" class="logo"></a>
-            </aside>
-            <div class="clearBoth"></div>
-            <div class="greenBorder"></div>
-            <footer class="footer">
-                <p class="footerCopy">&copy; Copyright 2017 Nathan Miller</p>
-            </footer>
-        </div>
-    </div>
-</body>
 
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Nathan Miller</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        <a href="https://github.com/nathanmiller9"><img src="assets/images/github_image2.png" class="social" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/nathan-miller-04411710/"><img src="assets/images/linkedin.png" class="social" alt="LinkedIn" /></a>
+        <a href="http://stackoverflow.com/users/edit/7348071"><img src="assets/images/stackoverflow_image.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 2017 Nathan Miller
+    </div>
+  </footer>
+</body>
 </html>
