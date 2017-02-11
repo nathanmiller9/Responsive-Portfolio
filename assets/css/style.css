@@ -9,7 +9,6 @@
     * {
         box-sizing: border-box;
     }
-    /*general*/
     
     .container {
         clear: both;
@@ -48,7 +47,6 @@
     h3 {
         font-size: 22px;
     }
-    /*header*/
     
     #masthead {
         position: fixed;
@@ -93,7 +91,6 @@
     nav a:first-child {
         border-left: 0 none;
     }
-    /*footer*/
     
     footer {
         padding: 30px 0;
@@ -105,7 +102,6 @@
         background: #666;
         border-top: 8px solid #4aaaa5;
     }
-    /*sidebar*/
     
     .sidebar {
         padding: 30px;
@@ -135,7 +131,6 @@
     .social:last-child {
         margin-right: 0;
     }
-    /*main*/
     
     #main-container {
         padding-top: 130px;
@@ -150,7 +145,6 @@
         background: #fff;
         border: 1px solid #ddd;
     }
-    /*portfolio page*/
     
     .work {
         position: relative;
@@ -191,7 +185,6 @@
         margin-right: 25px;
         float: left;
     }
-    /*contact page*/
     
     #contact-form ul {
         margin-bottom: 20px;
@@ -233,7 +226,7 @@
     
     @media screen and (min-width: 0px) and (max-width: 640px) {
         #masthead {
-        position: static;
+            position: static;
         }
         #main-container {
             padding: 5px 12px 0;
